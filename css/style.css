@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 40%;
+    border: 1px solid grey;
+    border-radius: 50px;
+}
+.navbar{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+
+}
+.nav-list li a{
+    
+     text-decoration: none;
+     color: black;
+     font-size: 20px;
+     font: bold;
+     font-family: 'ubuntu' sans-serif;
+     
+}
+.nav-list li a:hover{
+    color: rgb(112, 20, 20) ;
+}
+#search{
+    padding: 5px;
+    font-size: 17px ;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+    
+}
+.background{
+    background: rgba(0, 0, 0, 0.1) url(/img/bt2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+.firstSection{
+ height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    width: 110%;
+    border: 2px solid lightslategrey;
+    border-radius: 70px;
+    display: block;
+    margin: auto;
+    margin-top: 17px;
+    margin-left: 25px;
+}
+.text-big{
+    font-size: 41px;
+    color: #1f2a29;
+    
+    
+}
+.text-small{
+    font-size: 20px;
+    color: black;
+    line-height: 1.5rem;
+    
+
+}
+.btn{
+    padding: 8px 20px;
+    margin: 8px 3px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size: 18px;
+    background: none;
+    color: black;
+    outline: none;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 20px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(221, 0, 0);
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.btn-dark{
+    border: 2px solid  black;
+    color:  black;
+}
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.section-left{
+    
+    flex-direction: row-reverse;
+    margin-left: 225px;
+    
+    
+}
+.paras{
+    padding: 0 65px;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4px 2px;
+}
+
+.thumbnail img{
+    width: 240px;
+    border: 3px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.contact{
+    background-color: #f5f5f5;
+    height: 633px;
+}
+.contact-background{
+    background: rgba(0, 0, 0, 0.1) url(/img/sect2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 35px;
+}
+.form{
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.form-input{
+    width: 100%;
+    margin: 14px 0;
+    font-size: 18px;
+    padding: 5px 3px;
+    border-radius: 6px;
+    border: 2px solid grey;
+}
+.text-footer{
+    text-align: center;
+    font-family: 'ubuntu' , sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    
+}
+footer{
+    margin-top: 25px;
+}
+.burger{
+    display: none;
+     position: absolute;
+     right: 5px;
+     top: 15px;
+}
+.line{
+   width: 33px;
+   background-color: white;
+   height: 4px;
+   margin: 5px 3px;
+}
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+
+    }
+    .navbar{
+        height: 478px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 51px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
